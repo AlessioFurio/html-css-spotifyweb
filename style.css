@@ -10,12 +10,90 @@ main {
     width: 100%;
     height: 90vh;
     background: linear-gradient(#8a940a, #000);
+    display: flex;
 }
+
+/*inizio aside*/
 
 aside {
     width: 100px;
     height: 90vh;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.menu-aside {
+    height: calc(90vh - 100px);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-aside-top {
+    width: 100%;
+}
+
+.nav-menu-aside-top {
+    list-style-type: none;
+    width: 100%;
+}
+
+.nav-menu-aside-top li {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-aside-top li a {
+    color: #fff;
+    font-size: 25px;
+}
+
+.active {
+    border-left: 3px solid green;
+}
+
+.nav-menu-aside-bottom {
+    list-style-type: none;
+}
+
+.nav-menu-aside-bottom li {
+    padding: 10px;
+}
+
+.nav-menu-aside-bottom li a {
+    color: #fff;
+    font-size: 25px;
+}
+
+.nav-menu-aside-bottom li:last-child {
+    border-top: 1px solid #fff;
+}
+
+/*fine aside*/
+
+#content {
+    width: calc(100% - 100px);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 footer {
